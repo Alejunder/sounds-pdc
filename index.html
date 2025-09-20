@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonidos Aleatorios</title>
+    <meta name="description" content="Aplicación web para reproducir sonidos aleatorios al pulsar un botón">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">🎵 PDC Sounds</h1>
+            <p class="subtitle">Contenido previsional, en caso de que quieras añadir alguna funcionalidad a la página presentale tu idea al creador.  </p>
+        </header>
+
+        <main class="main-content">
+            <div class="player-section">
+                <button id="playRandomSound" class="play-button" type="button">
+                    <span class="button-icon">🔊</span>
+                    <span class="button-text">Reproducir Sonido</span>
+                </button>
+                
+                <div class="sound-info" id="soundInfo">
+                    <p class="current-sound">Listo para reproducir...</p>
+                </div>
+
+                <div class="controls">
+                    <button id="stopSound" class="control-button stop-button" type="button">
+                        <span> Detener </span>
+                    </button>
+                    <div class="volume-control">
+                        <label for="volumeSlider">🔉 Volumen:</label>
+                        <input type="range" id="volumeSlider" min="0" max="100" value="50" class="volume-slider">
+                        <span id="volumeValue">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="statistics">
+                <div class="stat-item">
+                    <span class="stat-number" id="soundsPlayed">0</span>
+                    <span class="stat-label">Sonidos reproducidos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="totalSounds">0</span>
+                    <span class="stat-label">Sonidos disponibles</span>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="sound-library">
+                <h3>Biblioteca de Sonidos</h3>
+                <div id="soundList" class="sound-list">
+                    <!-- Los sonidos se cargarán dinámicamente aquí -->
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Audio element para reproducir sonidos -->
+    <audio id="audioPlayer" preload="none"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
