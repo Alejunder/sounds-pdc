@@ -39,7 +39,6 @@ class RandomSoundPlayer {
         // Configuración inicial del reproductor de audio
         this.audioPlayer.volume = 0.5;
         
-        console.log('🎵 Aplicación de Sonidos Aleatorios inicializada');
     }
     
     /**
