@@ -93,22 +93,22 @@ class RandomSoundPlayer {
                 name: 'Blancuchi',
                 url: 'assets/sounds/blancuchi.mp3',
                 category: 'Hecho por El nigga'
+            },
+            {
+                name: 'Labubu',
+                url: 'assets/sounds/labubu.mp3',
+                category: 'Hecho por Boligondo'
+            },
+            {
+                name: 'Gemido Macanas',
+                url: 'assets/sounds/gemidomacanas.mp3',
+                category: 'Hecho por la Naturaleza'
+            },
+            {
+                name: 'Esponja Macanas',
+                url: 'assets/sounds/esponjamacanas.mp3',
+                category: '📍 Fondo de Tanguini'
             }
-            // {
-            //     name: 'Aplausos',
-            //     url: 'assets/sounds/applause.mp3',
-            //     category: 'Ambiente'
-            // },
-            // {
-            //     name: 'Lluvia',
-            //     url: 'assets/sounds/rain.mp3',
-            //     category: 'Naturaleza'
-            // },
-            // {
-            //     name: 'Gato',
-            //     url: 'assets/sounds/cat.mp3',
-            //     category: 'Animales'
-            // },
             // {
             //     name: 'Notificación',
             //     url: 'assets/sounds/notification.mp3',
@@ -231,7 +231,7 @@ class RandomSoundPlayer {
             this.elements.playButton.classList.add('playing');
         } else {
             icon.textContent = '🔊';
-            text.textContent = 'Reproducir Sonido';
+            text.textContent = 'Reproducir Sonido al azar';
             this.elements.playButton.classList.remove('playing');
         }
     }
