@@ -92,28 +92,33 @@ class RandomSoundPlayer {
             {
                 name: 'Blancuchi',
                 url: 'assets/sounds/blancuchi.mp3',
-                category: 'Hecho por El nigga'
+                category: 'By el nigga'
             },
             {
                 name: 'Labubu',
                 url: 'assets/sounds/labubu.mp3',
-                category: 'Hecho por Boligondo'
+                category: 'By Boligondo'
             },
             {
                 name: 'Gemido Macanas',
                 url: 'assets/sounds/gemidomacanas.mp3',
-                category: 'Hecho por la Naturaleza'
+                category: 'By Naturaleza'
             },
             {
                 name: 'Esponja Macanas',
                 url: 'assets/sounds/esponjamacanas.mp3',
                 category: '📍 Fondo de Tanguini'
+            },
+            {
+                name: 'Crisis de Identidad',
+                url: 'assets/sounds/crisisidentidad.mp3',
+                category: 'By Lucas Mojón'
+            },
+            {
+                name: 'Saludo British',
+                url: 'assets/sounds/saludobritanico.mp3',
+                category: 'By Lucas Mojón'
             }
-            // {
-            //     name: 'Notificación',
-            //     url: 'assets/sounds/notification.mp3',
-            //     category: 'UI'
-            // }
             
         ];
         
