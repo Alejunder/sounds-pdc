@@ -1,8 +1,3 @@
-/**
- * Aplicación de Sonidos Aleatorios
- * Estructura escalable y modular para gestionar reproducción de audio
- */
-
 class RandomSoundPlayer {
     constructor() {
         this.sounds = [];
@@ -92,7 +87,7 @@ class RandomSoundPlayer {
             {
                 name: 'Blancuchi',
                 url: 'assets/sounds/blancuchi.mp3',
-                category: 'By el nigga'
+                category: 'By el Nigga'
             },
             {
                 name: 'Labubu',
@@ -118,7 +113,34 @@ class RandomSoundPlayer {
                 name: 'Saludo British',
                 url: 'assets/sounds/saludobritanico.mp3',
                 category: 'By Lucas Mojón'
-            }
+            },
+            {
+                name: 'Joder',
+                url: 'assets/sounds/jodersaturado.mp3',
+                category: 'By el Nigga'
+            },
+            {
+                name: 'Libertad de expresión',
+                url: 'assets/sounds/expresionsaturada.mp3',
+                category: 'By el Nigga ligando'
+            },
+            {
+                name: 'Otro año más',
+                url: 'assets/sounds/otromaspdcsaturado.mp3',
+                category: 'By el Nigga'
+            },
+            {
+                name: 'Negro de forma ofensiva',
+                url: 'assets/sounds/negrata.mp3',
+                category: 'By ArepaMan'
+            },
+            {
+                name: 'Blanca para ya',
+                url: 'assets/sounds/blancaparaeco.mp3',
+                category: 'By Huesitos Coll'
+            },
+            
+
             
         ];
         

@@ -7,7 +7,7 @@
 - M4A  
 - AAC  
 
-## 🛠️ Instalación y Uso
+## Instalación y Uso
 
 1. **Clona o descarga** este repositorio  
    ```bash
