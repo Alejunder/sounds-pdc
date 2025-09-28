@@ -475,3 +475,49 @@ document.addEventListener('DOMContentLoaded', () => {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = RandomSoundPlayer;
 }
+
+// Funcionalidad del botón de pánico
+document.addEventListener('DOMContentLoaded', function() {
+    const panicButton = document.getElementById('panicButton');
+    const panicOverlay = document.getElementById('panicOverlay');
+    let isPanicMode = false;
+
+    // Función para alternar el modo pánico
+    function togglePanicMode() {
+        isPanicMode = !isPanicMode;
+        
+        if (isPanicMode) {
+            panicOverlay.classList.remove('hidden');
+            // Pausar todos los sonidos activos
+            pauseAllSounds();
+        } else {
+            panicOverlay.classList.add('hidden');
+        }
+    }
+
+    // Función para pausar todos los sonidos (si tienes sonidos reproduciéndose)
+    function pauseAllSounds() {
+        const allAudios = document.querySelectorAll('audio');
+        allAudios.forEach(audio => {
+            audio.pause();
+        });
+    }
+
+    // Event listener para el botón
+    panicButton.addEventListener('click', togglePanicMode);
+
+    // Event listener para la tecla P
+    document.addEventListener('keydown', function(event) {
+        if (event.key.toLowerCase() === 'p') {
+            event.preventDefault(); // Prevenir comportamiento por defecto
+            togglePanicMode();
+        }
+    });
+
+    // Event listener para cerrar al hacer click en el overlay
+    panicOverlay.addEventListener('click', function(event) {
+        if (event.target === panicOverlay) {
+            togglePanicMode();
+        }
+    });
+});
