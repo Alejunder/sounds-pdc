@@ -139,9 +139,11 @@ class RandomSoundPlayer {
                 url: 'assets/sounds/blancaparaeco.mp3',
                 category: 'By Huesitos Coll'
             },
-            
-
-            
+            {
+                name: 'Soy gaytorade',
+                url: 'assets/sounds/soygaytorade.mp3',
+                category: 'By depravados'
+            },            
         ];
         
         // Solo agregar sonidos que existan
