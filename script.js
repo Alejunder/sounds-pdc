@@ -143,7 +143,17 @@ class RandomSoundPlayer {
                 name: 'Soy gaytorade',
                 url: 'assets/sounds/soygaytorade.mp3',
                 category: 'By depravados'
-            },            
+            },  
+            {
+                name: 'Callate Lourdes agudo',
+                url: 'assets/sounds/callalourdesagudo.mp3',
+                category: 'By depravados'
+            },  
+            {
+                name: 'Callate Lourdes',
+                url: 'assets/sounds/callalourdes.mp3',
+                category: 'By depravados'
+            },                  
         ];
         
         // Solo agregar sonidos que existan
